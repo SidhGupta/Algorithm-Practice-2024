@@ -13,18 +13,35 @@
 // factorial(6)
 
 
-let yesterday = []
-let today = []
+// let yesterday = []
+// let today = []
 
-function occupiedParking(spaces, yesterday, today){
-    let count = 0;
-    for(let i = 0; i <spaces; i++) {
-        if (yesterday[i] === "C" && today[i] === "c"){
-            count++;
-        }
+// function occupiedParking(spaces, yesterday, today){
+//     let count = 0;
+//     for(let i = 0; i <spaces; i++) {
+//         if (yesterday[i] === "C" && today[i] === "c"){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+
+// console.log(occupiedParking(5, "" , ""));
+
+
+function binaryToDecimal(binary){
+    decimal = 0 
+    const n = binary.length;
+
+    for (let i = 0; i < n; i++) {
+
+        const digit = int(n - i- 1);
+
+        decimal += digit * Math.pow(2);
     }
-    return count;
+     console.log(decimal);
 }
 
 
-console.log(occupiedParking(5, "" , ""));
+binaryToDecimal(111111111)
